@@ -1,6 +1,6 @@
 '''
 awsサーバーに設置予定
-  11/8, 2021 Alexaプログラム「次の電車は?」 
+  11/9, 2021 Alexaプログラム「次の電車は?」 
   目黒線 時刻表改正(2021-03-13)
   with 日本の祝日
   cf. https://techblog.gmo-ap.jp/2020/01/08/alexa_skill_with_lamba/
