@@ -6,7 +6,6 @@
 '''
     目黒線の急行通過駅の時刻表DataをAWS用に用意する
 '''
-
 from datetime import datetime
 import requests
 import bs4

@@ -2,14 +2,14 @@
 lambda_function.py
 
   Next train for Tokyu Meguro-Line.
-  Needs jpholiday package, Time Table of Tokyu Meguro-Line as "meguroTrTable.txt"
+  Needs jpholiday package, Time Table of Tokyu Meguro-Line as "mg_timetable.txt"
   2023-03-31
 '''
 from datetime import datetime, timedelta, timezone
 import ast
 import jpholiday
 
-TableName = 'meguroTrTable.txt'
+TableName = 'mg_timetable.txt'
 
 class BaseSpeech:
     def __init__(self, speech_text, should_end_session, session_attributes=None):
