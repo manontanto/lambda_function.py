@@ -78,11 +78,9 @@ def check_station(st_name):
     return None
 
 def check_ud(UD):
-    r = 2
-    if UD == "上り":
-        r = 0
-    if UD == "下り":
-        r = 1
+    if UD not in ("上り", "下り"):
+        return None
+    r = 0 if UD == "上り" else 1
     return r
 
 def check_slots_value(intent):
@@ -112,7 +110,7 @@ def table(event):
     if StCode is None:
         doko_dotti_response('doko')
         return
-    if UpDn == 2:
+    if UpDn is None:
         doko_dotti_response('dotti')
         return
 
